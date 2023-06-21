@@ -1,41 +1,1 @@
-#include <stdio.h>
-	/**
-	 * main - fibonacci <3
-	 *
-	 * Purpose - no hardcode
-	 *
-	 * Return:  (Success)
-	 */
-	int main(void)
-	{
-		unsigned long int i;
-		unsigned long int bef = 1;
-		unsigned long int aft = 2;
-		unsigned long int l = 1000000000;
-		unsigned long int bef1;
-		unsigned long int bef2;
-		unsigned long int aft1;
-		unsigned long int aft2;
-		printf("%lu", bef);
-		for (i = 1; i < 91; i++)
-		{
-			printf(", %lu", aft);
-			aft += bef;
-			bef = aft - bef;
-		}
-		bef1 = (bef / l);
-		bef2 = (bef % l);
-		aft1 = (aft / l);
-		aft2 = (aft % l);
-		for (i = 92; i < 99; ++i)
-		{
-			printf(", %lu", aft1 + (aft2 / l));
-			printf("%lu", aft2 % l);
-			aft1 = aft1 + bef1;
-			bef1 = aft1 - bef1;
-			aft2 = aft2 + bef2;
-			bef2 = aft2 - bef2;
-		}
-		printf("\n");
-		return (0);
-	}
+VimCrypt~03!YìòÍ=xÌØ½äÌ<ð©b˜â€<µðÆ÷»¥Â/8‘h•éxðŽžXÄ±Š3RbúÍÏX…Ñ¥âÎÔyCê­70c×±"i…{Žìâ¹¦üeu¸0ÚÖ‰íÝ€ÿµÈàæ²béñ&‡ù/Sjk­Õ7X¯bL›‚sjº³¦`”¡ J­o³^¥Ù>ý±gì…«&ªBwòo”ÍBïÊ›ºZÈëäP5¡\ºÚ2£“:±îŸÛþoÚ˜/ m£»þÐÀÇVÖ×•e•Mv£úDO‡ï¬sû É¬=(þH€Ê¬2f\’TêŠ´J|\ïÒÀ.)‡a[dcê¿»ã4³°$ïÐ®7¬¢Ì¶DIïC¦.-Þ<g »ªÿK¢™£yÑ+TfR5²£Ùl»B²iÝH+ú´ØÊ9o¸Í¨×žÒYæ~góªùÕÁ¢¸G–›³2š)ú"cèi´ÃÃ¼›“•ço`¼*bKŒäý2d€C½àâò%ln}£XoË%“ƒË	lP¦“­¸í¤68ÞIÎB3¸Š8‹"H©½:,Ã6©³U4b‹–'/J|Œyý0”Õ^ŽêóÕá*LÈ\.ŽøUNZ!©<GüIq,³•J+jÌ„nß°_ÆöD*ìp¯¨v­‚yÂ‰QëGù'ŒÌu™¹îFZÙ&Ì:pW®¨rÏhÌh†·_®SaÍ—çBÊïŠð“à	UZDn>‚Ó UÌFŠsVp‰ÒYB-ç®Íò«_ºàý' Ä4°FXš¸Â¼„MØ©ARÓî4÷&Xµ0cìÍ'OœäÃ†Ïc„‹“÷WB¶ßÝqMxÁôÜø‚éjµ¤ecºò8·Áß”ŒÏ\¼£mUÕ¼¯Î°¢ªIÕ!;úÓfbäºmR‹eqV4FÈÉàÓ-¥+„öìtE4cåk&ÑqW¢3Ÿ'áùIÞþFBeø& ‘ìÎ^¹NÕšz%Í&Œ€4¶Ü’Ò:Lé´çÞÀTÑmðuëŸ´ï¢˜x\HÓ¸~w–Q/¿/úòÔ!*ŽIð†}úõƒ1§û2 /;-Wás`·v©‘Ã¼³Ur€rñZ¾(s½$ÈM°XÊ —À©÷ws˜f2ôÿ»ÐŽ/É£	Y™4“YDýOc£´Ÿi±AE¯nÃ/ˆ<jõbž
