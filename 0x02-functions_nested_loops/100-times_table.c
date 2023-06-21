@@ -1,1 +1,49 @@
-VimCrypt~03!YìòÍ=xÌØ½äÌ<ð©b˜â€<µðÆ÷»¥Â/8‘h•éxðŽžXÄ±Š3RbúÍÏX…Ñ¥âÎÔyCê­70c×±"i…{Žìâ¹¦üeu¸0ÚÖ‰íÝ€ÿµÈàæ²béñ&‡ù/Sjk­Õ7X¯bL›‚sjº³¦`”¡ J­o³^¥Ù>ý±gì…«&ªBwòo”ÍBïÊ›ºZÈëäP5¡\ºÚ2£“:±îŸÛþoÚ˜/ m£»þÐÀÇVÖ×•e•Mv£úDO‡ï¬sû É¬=(þH€Ê¬2f\’TêŠ´J|\ïÒÀ.)‡a[dcê¿»ã4³°$ïÐ®7¬¢Ì¶DIïC¦.-Þ<g »ªÿK¢™£yÑ+TfR5²£Ùl»B²iÝH+ú´ØÊ9o¸Í¨×žÒYæ~góªùÕÁ¢¸G–›³2š)ú"cèi´ÃÃ¼›“•ço`¼*bKŒäý2d€C½àâò%ln}£XoË%“ƒË	lP¦“­¸í¤68ÞIÎB3¸Š8‹"H©½:,Ã6©³U4b‹–'/J|Œyý0”Õ^ŽêóÕá*LÈ\.ŽøUNZ!©<GüIq,³•J+jÌ„nß°_ÆöD*ìp¯¨v­‚yÂ‰QëGù'ŒÌu™¹îFZÙ&Ì:pW®¨rÏhÌh†·_®SaÍ—çBÊïŠð“à	UZDn>‚Ó UÌFŠsVp‰ÒYB-ç®Íò«_ºàý' Ä4°FXš¸Â¼„MØ©ARÓî4÷&Xµ0cìÍ'OœäÃ†Ïc„‹“÷WB¶ßÝqMxÁôÜø‚éjµ¤ecºò8·Áß”ŒÏ\¼£mUÕ¼¯Î°¢ªIÕ!;úÓfbäºmR‹eqV4FÈÉàÓ-¥+„öìtE4cåk&ÑqW¢3Ÿ'áùIÞþFBeø& ‘ìÎ^¹NÕšz%Í&Œ€4¶Ü’Ò:Lé´çÞÀTÑmðuëŸ´ï¢˜x\HÓ¸~w–Q/¿/úòÔ!*ŽIð†}úõƒ1§û2 /;-Wás`·v©‘Ã¼³Ur€rñZ¾(s½$ÈM°XÊ —À©÷ws˜f2ôÿ»ÐŽ/É£	Y™4“YDýOc£´Ÿi±AE¯nÃ/ˆ<jõbž
+#include "main.h"
+
+
+	/**
+	 * print_times_table - prints the n times table, starting with 0
+	 * @n: number of the times table
+	 */
+	void print_times_table(int n)
+	{
+		int i, j, k;
+
+
+		if (n >= 0 && n <= 15)
+		{
+			for (i = 0; i <= n; i++)
+			{
+				for (j = 0; j <= n; j++)
+				{
+					k = j * i;
+					if (j == 0)
+					{
+						_putchar(k + '0');
+					} else if (k < 10 && j != 0)
+					{
+						_putchar(',');
+						_putchar(' ');
+						_putchar(' ');
+						_putchar(' ');
+						_putchar(k + '0');
+					} else if (k >= 10 && k < 100)
+					{
+						_putchar(',');
+						_putchar(' ');
+						_putchar(' ');
+						_putchar((k / 10) + '0');
+						_putchar((k % 10) + '0');
+					} else if (k >= 100)
+					{
+						_putchar(',');
+						_putchar(' ');
+						_putchar((k / 100) + '0');
+						_putchar(((k / 10) % 10) + '0');
+						_putchar((k % 10) + '0');
+					}
+				}
+				_putchar('\n');
+			}
+		}
+	}
